@@ -2,16 +2,7 @@
 {
   background-color: #343A40;
 }
-.page-footer
-{
-  text-align: center;
-  color: white;
-  bottom:0;
-  width:100%;
-  height:60px;   /* Height of the footer */
-  background:#6cf;
-}
-.info
+
 {
   background-color : #ffffff;
 }
@@ -32,12 +23,51 @@
     }
 }
 
-
-
-
 .card_bordered
 {
   border: 1px solid #808182;
   padding: 2%;
 
+}
+
+
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#wrapper {
+   min-height:100%;
+   position:relative;
+}
+.page-footer
+{
+
+
+   color: white;
+   text-align: center;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#343A40;
+}
+
+.about
+{
+  text-align: center;
+}
+
+.about__user
+{
+  background-color: #82eeff;
+}
+.about__slider
+{
+  background-color: #007fff;
+}
+
+.table-deck
+{
+  text-align: center;
 }
