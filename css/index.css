@@ -1,0 +1,120 @@
+#anchor:link {
+  background-color: blue;
+}
+
+#anchor:visited {
+  background-color: green;
+}
+
+
+#anchor:hover {
+  background-color: red;
+}
+
+#anchor:active {
+  background-color: yellow;
+}
+
+
+li
+{
+  list-style-type: circle;
+
+  margin: 20px 25px 30px;
+}
+
+
+
+
+p
+{
+	font-weight: 600;
+	padding: 1%;
+}
+h1
+{
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #2C3E50;
+	text-align: center;
+}
+
+h4
+{
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #2C3E50;
+	text-align: center;
+}
+
+
+.Box
+{
+	padding: 10px;
+	border: solid 10px #BDC3C7;
+	width: 80%;
+	margin: auto;
+}
+
+.sub-heading
+{
+  border-left: 4px solid  #5d5e60;
+  padding-left: 1%;
+}
+
+.Article
+{
+	padding: 1%;
+}
+
+
+.Date
+{
+	color: #3498DB;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 5px;
+	width: 22%;
+	border-bottom: 2px solid #BDC3C7;
+	margin-left: 39%;
+	margin-bottom: 5%;
+
+}
+
+.done
+{
+  color: green;
+}
+
+.remaining
+{
+  color: red;
+}
+
+img
+{
+	margin: 20px 30% 20px 30%;
+	width: 40%;
+	height: 40%;
+}
+
+*
+{
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+body
+{
+	border: 2px solid #a8a9ad;
+	margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+	width: 66%;
+  height: 100%;
+	padding: 0px;
+}
+
+hr
+{
+  border: 1px solid #5d5e60;
+}
