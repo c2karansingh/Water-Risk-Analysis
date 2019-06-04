@@ -25,16 +25,9 @@
   border: solid 1px #222528;
 }
 
-@media (max-width: 575px)
-{
-    .logo
-    {
-        display: none;
-    }
-}
-
 .card_bordered
 {
+  margin:4% 4%;
   border: 1px solid #808182;
   padding: 2%;
 
@@ -133,4 +126,9 @@ body {
 {
 	background-color: #fafad2;
 	border-top: 1px solid #808182;
+}
+
+.navbar-expand-sm .navbar-nav .dropdown-menu
+{
+  position: absolute;
 }
