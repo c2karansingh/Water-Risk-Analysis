@@ -98,34 +98,55 @@ body {
 
 .news
 {
-	margin-top : 10px;
-	background-color :	#ADD8E6;
+	margin: 2%;
 }
 
-.news_left
+.news__left
 {
-	width :60%;
-	border: 1px solid #808182;
+	border: 1px solid #ffffff;
 	border-radius : 3%;
-	background-color : 	#D3D3D3;
 }
 
-.news_right
+.news__right
 {
-	width :40%;
 	border: 1px solid #808182;
 	border-radius : 3%;
 }
 
-.news_top
+.news__img
 {
-	background-color: eee8aa;
+	width: 100%;
+	height: 300px;
+	border : 2px solid #ffffff;
+	border-radius: 2%;
 }
 
-.news_bottom
+.news__right--facebook
 {
-	background-color: #fafad2;
+	font-size: 150%;
+	margin-bottom: 10%;
+	color: blue;
+}
+
+.news__right--instagram
+{
+	font-size: 150%;
+	margin-bottom: 10%;
+	color: purple;
+}
+
+.news__right--top
+{
+	padding-left: 33%;
+	padding-top: 8%;
+	height:50%;
+}
+
+.news__right--bottom
+{
 	border-top: 1px solid #808182;
+	padding-left: 33%;
+	padding-top: 8%;
 }
 
 .navbar-expand-sm .navbar-nav .dropdown-menu
