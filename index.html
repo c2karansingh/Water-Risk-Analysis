@@ -2,76 +2,161 @@
 <html lang="en" dir="ltr">
 
   <head>
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/index.css">
-
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/settings.png">
     <title>Task portal</title>
-
+    <style>
+    </style>
   </head>
 
   <body>
-
-
-
-
-
-    		<div class="Article">
-
-    			<div class="Date">last updated on 5th June, 2019</div>
-
-    			<h1>current status of the project</h1>
-
-
-
-    			<img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
-
-
-    			<blockquote>
-
-            <div class="sub-heading">
-                <em>This page will show the status for the current task on hand</em>
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- This is the note on top of the page -->
+        <div class="alert alert-info">
+            <h4 class="text-center">
+              Last updated on 5th June, 2019
+            </h4>
+        </div>
+        <h2 class="text-center">
+          Current status of the project
+        </h2>
+        <!-- This is the image carousel -->
+        <div class="row">
+          <div class="col-xs-12 col-md-3"></div>
+          <div class="col-xs-12 col-md-6">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="/images/MainFrames.jpg" alt="...">
+                  <div class="carousel-caption">
+                    Look at these, Write some caption here
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="images/Charts.jpg" alt="...">
+                  <div class="carousel-caption">
+                    Look at this second image, this better be giving you a caption
+                  </div>
+                </div>                
+                <div class="item">
+                    <img src="images/map.jpg" alt="...">
+                    <div class="carousel-caption">
+                      You're worse than columbus, at leat he found America
+                    </div>
+                  </div>
+              </div>
+            
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-
-
-    			</blockquote>
-
-          <p>
-
-            <h4>Pages</h4>
-            <ul>
-              <li><a href="home.html">home page</a></li>
-              <li><a href="plans.html">pricing plans page</a></li>
-              <li><a href="https://github.com/c2karansingh/Water-Risk-Analysis">source code</a></li>
-
-            </ul>
-
-    			</p>
-
-<hr>
-<p>
-
-  <h4>Current tasks</h4>
-
-  <ul>
-
-    <li>navbar in small screen should have hamburger button, logo & profile in that order <span class="done">&#10004;</span></li>
-    <li>profile menu in small screen should not expand navbar along with it <span class="done">&#10004;</span></li>
-    <li>home page :Add image & social media link to the news section <span class="remaining">&#10006;</span></li>
-    <li>home page :hamburger should have the same behavior as described above for profile menu <span class="remaining">&#10006;</span></li>
-    <li>planning page :set jumbotron and the user row to occupy 100% width <span class="done">&#10004;</span></li>
-    <li>planning page :set top & bottom margins for the cards <span class="done">&#10004;</span></li>
-    <li>planning page :create toggle widget for cards in small screen <span class="remaining">&#10006;</span></li>
-  </ul>
-
-
-</p>
-
-
-
-
-    		</div>
-
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-xs-12 col-sm-1"></div>
+          <div class="col-xs-12 col-sm-10">
+            <div class="row">
+                <!-- //This is the blockquote section -->
+              <div class="col-sm-6 col-xs-12"> 
+                <blockquote>
+                  <p>This page will show the status for the current task on hand</p>
+                  <footer>A taskbar? <cite title="Source Title">maybe?</cite></footer>
+                </blockquote>
+              </div>
+              <!-- This is the panel group section -->
+              <div class="col-sm-6 col-xs-12">
+                  <div class="panel-group" id="pagesAccordion" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="button" data-toggle="collapse" 
+                            data-parent="#pagesAccordion" href="#HomeDetailsPage">
+                            <h4 class="text-center">
+                              Home
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="HomeDetailsPage">
+                            <div class="panel-body">
+                              <p>This will be the home page and we can write more stuff here about the Home page as well,</p>
+                              <a class="btn" href="home.html">home page</a>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="button" data-toggle="collapse" 
+                            data-parent="#pagesAccordion" href="#PriceDetailsPage">
+                            <h4 class="text-center">
+                                Pricing Plans
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="PriceDetailsPage">
+                            <div class="panel-body">
+                              <p>This will take you to the pricing plans page, it would be nice to keep some info here 
+                                explaining the different price categories in short</p>
+                              <a class="btn" href="plans.html">Pricing Plans page</a>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="button" data-toggle="collapse" 
+                            data-parent="#pagesAccordion" href="#SourceDetailsPage">
+                            <h4 class="text-center">
+                                Source Code
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="SourceDetailsPage">
+                            <div class="panel-body">
+                              <p>This will be the Source code page, it would just be great to keep a quote here explaining what took to build all this</p>
+                              <a class="btn" href="https://github.com/c2karansingh/Water-Risk-Analysis">Pricing Plans page</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <div class="list-group">
+                <h4 class="list-group-heading">Current tasks</h4>
+                <p class="list-group-item">
+                  navbar in small screen should have hamburger button, logo & profile in that order <span class="done">&#10004;</span>
+                </p>
+                <p class="list-group-item">
+                  profile menu in small screen should not expand navbar along with it <span class="done">&#10004;</span>
+                </p>
+                <p class="list-group-item">
+                  home page :Add image & social media link to the news section <span class="remaining">&#10006;</span>
+                </p>
+                <p class="list-group-item">
+                  home page :hamburger should have the same behavior as described above for profile menu <span class="remaining">&#10006;</span>
+                </p>
+                <p class="list-group-item">
+                  planning page :set jumbotron and the user row to occupy 100% width <span class="done">&#10004;</span>
+                </p>
+                <p class="list-group-item">
+                  planning page :set top & bottom margins for the cards <span class="done">&#10004;</span>
+                </p>
+                <p class="list-group-item">
+                  planning page :create toggle widget for cards in small screen <span class="remaining">&#10006;</span>
+                </p>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-1"></div>
+        </div>
+    </div>
   </body>
-
 </html>
