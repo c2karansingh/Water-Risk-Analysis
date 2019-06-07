@@ -5,9 +5,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8">
-    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <link rel="shortcut icon" type="image/x-icon" href="images/settings.png">
     <title>Task portal</title>
     <style>
@@ -16,7 +24,7 @@
 
   <body>
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-sm-12">
         <!-- This is the note on top of the page -->
         <div class="alert alert-info">
             <h4 class="text-center">
@@ -28,29 +36,29 @@
         </h2>
         <!-- This is the image carousel -->
         <div class="row">
-          <div class="col-xs-12 col-md-3"></div>
-          <div class="col-xs-12 col-md-6">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <div class="col-12 col-sm-2 col-md-3"></div>
+          <div class="col-12 col-sm-8 col-md-6">
+            <div id="start-page-carousel" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#start-page-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#start-page-carousel" data-slide-to="1"></li>
+                <li data-target="#start-page-carousel" data-slide-to="2"></li>
               </ol>
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <img src="/images/MainFrames.jpg" alt="...">
+              <div class="carousel-inner" role="listbox" style="height: 50%;">
+                <div class="carousel-item active">
+                  <img class="img-fluid" src="/images/MainFrames.jpg" alt="...">
                   <div class="carousel-caption">
                     Look at these, Write some caption here
                   </div>
                 </div>
-                <div class="item">
-                  <img src="images/Charts.jpg" alt="...">
+                <div class="carousel-item">
+                  <img class="img-fluid" src="images/Charts.jpg" alt="...">
                   <div class="carousel-caption">
                     Look at this second image, this better be giving you a caption
                   </div>
                 </div>                
-                <div class="item">
-                    <img src="images/map.jpg" alt="...">
+                <div class="carousel-item">
+                    <img class="img-fluid" src="images/map.jpg" alt="...">
                     <div class="carousel-caption">
                       You're worse than columbus, at leat he found America
                     </div>
@@ -58,12 +66,12 @@
               </div>
             
               <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <a class="carousel-control-prev" href="#start-page-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <a class="carousel-control-next" href="#start-page-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
             </div>
@@ -71,63 +79,52 @@
         </div>
         <hr />
         <div class="row">
-          <div class="col-xs-12 col-sm-1"></div>
-          <div class="col-xs-12 col-sm-10">
+          <div class="col-12 col-sm-1"></div>
+          <div class="col-12 col-sm-10">
             <div class="row">
                 <!-- //This is the blockquote section -->
-              <div class="col-sm-6 col-xs-12"> 
-                <blockquote>
-                  <p>This page will show the status for the current task on hand</p>
-                  <footer>A taskbar? <cite title="Source Title">maybe?</cite></footer>
+              <div class="col-sm-6 col-12"> 
+                <blockquote class="blockquote">
+                  <p class="mb-0">This page will show the status for the current task on hand</p>
+                  <footer class="blockquote-footer">A taskbar? <cite title="Source Title">maybe?</cite></footer>
                 </blockquote>
               </div>
               <!-- This is the panel group section -->
-              <div class="col-sm-6 col-xs-12">
-                  <div class="panel-group" id="pagesAccordion" role="tablist" aria-multiselectable="true">
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="button" data-toggle="collapse" 
-                            data-parent="#pagesAccordion" href="#HomeDetailsPage">
-                            <h4 class="text-center">
-                              Home
-                            </h4>
-                        </div>
-                        <div class="panel-collapse collapse" id="HomeDetailsPage">
-                            <div class="panel-body">
-                              <p>This will be the home page and we can write more stuff here about the Home page as well,</p>
-                              <a class="btn" href="home.html">home page</a>
-                            </div>
-                        </div>
+              <div class="col-sm-6 col-12">
+                <div class="card">
+                  <div class="text-center" role="button" data-toggle="collapse" href="#HomeDetailsPage">
+                    Home
+                  </div>
+                  <div class="collapse" id="HomeDetailsPage">
+                      <div class="card-body">
+                        <p>This will be the home page and we can write more stuff here about the Home page as well,</p>
+                        <a class="btn" href="home.html">home page</a>
                       </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="button" data-toggle="collapse" 
-                            data-parent="#pagesAccordion" href="#PriceDetailsPage">
-                            <h4 class="text-center">
-                                Pricing Plans
-                            </h4>
-                        </div>
-                        <div class="panel-collapse collapse" id="PriceDetailsPage">
-                            <div class="panel-body">
-                              <p>This will take you to the pricing plans page, it would be nice to keep some info here 
-                                explaining the different price categories in short</p>
-                              <a class="btn" href="plans.html">Pricing Plans page</a>
-                            </div>
-                        </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="text-center" role="button" data-toggle="collapse" href="#PriceDetailsPage">
+                      Pricing Plans
+                  </div>
+                  <div class="collapse" id="PriceDetailsPage">
+                      <div class="card-body">
+                        <p>This will take you to the pricing plans page, it would be nice to keep some info here 
+                          explaining the different price categories in short</p>
+                        <a class="btn" href="plans.html">Pricing Plans page</a>
                       </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="button" data-toggle="collapse" 
-                            data-parent="#pagesAccordion" href="#SourceDetailsPage">
-                            <h4 class="text-center">
-                                Source Code
-                            </h4>
-                        </div>
-                        <div class="panel-collapse collapse" id="SourceDetailsPage">
-                            <div class="panel-body">
-                              <p>This will be the Source code page, it would just be great to keep a quote here explaining what took to build all this</p>
-                              <a class="btn" href="https://github.com/c2karansingh/Water-Risk-Analysis">Pricing Plans page</a>
-                            </div>
-                        </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="text-center" role="button" data-toggle="collapse" href="#SourceDetailsPage">
+                      Source Code
+                  </div>
+                  <div class="collapse" id="SourceDetailsPage">
+                      <div class="card-body">
+                        <p>This will be the Source code page, it would just be great to keep a quote here explaining what took to build all this</p>
+                        <a class="btn" href="https://github.com/c2karansingh/Water-Risk-Analysis">Pricing Plans page</a>
                       </div>
-                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="list-group">
@@ -155,7 +152,7 @@
                 </p>
               </div>
           </div>
-          <div class="col-xs-12 col-sm-1"></div>
+          <div class="col-sm-12 col-sm-1"></div>
         </div>
     </div>
   </body>
